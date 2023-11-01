@@ -1,6 +1,7 @@
 package com.example.brandontownesxmlcolorme
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.ComponentActivity
 import com.example.brandontownesxmlcolorme.databinding.ActivityMainBinding
 import androidx.activity.compose.setContent
@@ -15,11 +16,11 @@ import com.example.brandontownesxmlcolorme.ui.theme.BrandonTownesXMLColorMeTheme
 
 class MainActivity : ComponentActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
     }
+
 }
 

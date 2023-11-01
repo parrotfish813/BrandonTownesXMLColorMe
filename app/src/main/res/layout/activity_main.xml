@@ -5,26 +5,39 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/red_button"
+        android:id="@+id/buttonRed"
         android:layout_width="match_parent"
-        android:layout_height="242dp"
-        android:text="@string/red_button"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:background="@drawable/button_bg_color_change_red"
-        />
-
-
-    <Button
-        android:id="@+id/blue_button"
-        android:layout_width="match_parent"
-        android:layout_height="242dp"
-        android:text="@string/blue_button"
-        android:background="@drawable/button_bg_color_change_blue"
+        android:text="@string/red_button"
+        android:onClick="buttonNext"
         />
 
     <Button
-        android:id="@+id/green_button"
+        android:id="@+id/buttonGreen"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRed"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:background="@drawable/button_bg_color_change_green"
-        android:text="@string/green_button" />
+        android:text="@string/green_button"
+        android:onClick="buttonNext"
+        />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonGreen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_bg_color_change_blue"
+        android:text="@string/blue_button"
+        android:onClick="buttonNext"
+        />
+
 </LinearLayout>
