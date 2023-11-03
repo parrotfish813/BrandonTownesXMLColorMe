@@ -16,9 +16,35 @@ import com.example.brandontownesxmlcolorme.ui.theme.BrandonTownesXMLColorMeTheme
 
 class MainActivity : ComponentActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.buttonRed.setOnClickListener {
+            binding.buttonRed.setBackgroundColor(resources.getColor(R.color.red))
+            binding.toastMessage.setText("Red Button")
+        }
+
+        binding.buttonGreen.setOnClickListener {
+            binding.buttonGreen.setBackgroundColor(resources.getColor(R.color.green))
+            binding.toastMessage.setText("Green Button")
+        }
+
+        binding.buttonBlue.setOnClickListener {
+            binding.buttonBlue.setBackgroundColor(resources.getColor(R.color.blue))
+            binding.toastMessage.setText("Blue Button")
+        }
+
+        binding.resetbutton.setOnClickListener {
+            binding.buttonBlue.setBackgroundColor(resources.getColor(R.color.white))
+            binding.buttonGreen.setBackgroundColor(resources.getColor(R.color.white))
+            binding.buttonRed.setBackgroundColor(resources.getColor(R.color.white))
+            binding.toastMessage.setText("")
+        }
 
     }
 
